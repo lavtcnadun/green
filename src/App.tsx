@@ -78,7 +78,7 @@ export default function App() {
               transition={{ delay: 0.4 }}
               className="text-6xl md:text-[84px] font-bold text-white mb-6 leading-[0.95] tracking-[-2px]"
             >
-              THE GREAT<br/>GREEN TURTLE
+              THE GREAT<br/>GREEN TURTLE OF SRI LANKA
             </motion.h1>
             <motion.div
               initial={{ opacity: 0 }}
