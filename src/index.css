@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Georgia", serif;
+  
+  --color-ocean-deep: #02080d;
+  --color-ocean-glow: #004d61;
+  --color-accent-teal: #4dbbc4;
+  --color-text-main: #e0f2f1;
+  --color-glass: rgba(255, 255, 255, 0.05);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+  --color-coral: #ff4d4d;
+}
+
+@layer base {
+  body {
+    @apply bg-ocean-deep text-text-main overflow-x-hidden antialiased;
+  }
+}
+
+@layer utilities {
+  .atmosphere {
+    background: 
+      radial-gradient(circle at 70% 20%, var(--color-ocean-glow) 0%, transparent 60%),
+      radial-gradient(circle at 20% 80%, #001f2b 0%, transparent 50%);
+  }
+  
+  .light-rays {
+    background: repeating-linear-gradient(110deg, transparent, transparent 100px, rgba(77, 187, 196, 0.03) 120px, transparent 140px);
+    filter: blur(20px);
+  }
+
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-[20px] border border-white/10;
+  }
+}
